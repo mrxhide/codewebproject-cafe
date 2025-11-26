@@ -1,0 +1,156 @@
+/* ===========================
+   GLOBAL SECTION SPACING
+=========================== */
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* ===========================
+   HERO SECTION PREMIUM
+=========================== */
+.hero {
+    height: 80vh; /* compact */
+    background: url('img/5.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+/* Card Glassmorphism */
+.hero .glass-card,
+.hero .card-glass {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+
+/* ===========================
+   NAVBAR GLASS EFFECT
+=========================== */
+.glass-nav {
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+}
+
+/* ===========================
+   GOLD BUTTON PREMIUM
+=========================== */
+.btn-gold {
+    background: linear-gradient(135deg, #FFD86F, #FFB84C);
+    color: #4A3300 !important;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-gold:hover {
+    background: linear-gradient(135deg, #FFE08C, #FFC46A);
+}
+
+/* ===========================
+   MENU CARD PREMIUM
+=========================== */
+.menu-card {
+    background: #1A1A1A;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #FFD86F30;
+    transition: 0.3s;
+}
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 200, 80, 0.3);
+}
+
+/* MENU IMAGE COMPACT */
+.menu-card img {
+    height: 160px !important; /* compact */
+    object-fit: cover;
+}
+
+/* ===========================
+   SECTION TITLE GOLD
+=========================== */
+.section-title {
+    color: #FFD86F;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* ===========================
+   TESTIMONI CARD
+=========================== */
+.testi-card {
+    background: #151515;
+    padding: 18px; /* compact */
+    border-radius: 12px;
+    border: 1px solid #FFD86F40;
+    color: #FFD86F;
+    text-align: center;
+}
+
+/* ===========================
+   OPENING HOURS GLASSBOX
+=========================== */
+.glass-box {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: #FFD86F;
+}
+
+/* ===========================
+   GALLERY COMPACT
+=========================== */
+.gallery-img {
+    height: 180px; 
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ===========================
+   FLOATING WHATSAPP BUTTON
+=========================== */
+.floating-wa {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    font-size: 26px;
+    border-radius: 50%;
+    color: white !important;
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+.floating-wa:hover {
+    transform: scale(1.1);
+}
+
+/* ===========================
+   RESPONSIVE COMPACT MODE (HP)
+=========================== */
+@media (max-width: 768px) {
+
+    .hero {
+        height: 70vh;
+    }
+
+    .menu-card img {
+        height: 120px !important;
+    }
+
+    .gallery-img {
+        height: 130px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
